@@ -1,2 +1,23 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<div class="wrapper">
+    <header>
+      <h1>Work in progress 🚧</h1>
+    </header>
+    <main>
+      <span>In the mean time, check out my social media 🌐</span>
+      <div class="socials">
+        <a aria-label="Github" rel="noreferrer" href="https://github.com/nielspruis" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 768 768">
+            <path d="M384 0C172 0 0 172.6 0 385.5a385.5 385.5 0 0 0 262.7 365.8c19.2 3.6 26.2-8.3 26.2-18.5l-.6-65.6C181.5 690.5 159 615.5 159 615.5c-17.4-44.5-42.6-56.4-42.6-56.4-35-23.9 2.5-23.4 2.5-23.4 38.6 2.7 58.8 39.7 58.8 39.7 34.3 59 90 42 111.8 32C293 582.5 303 565.5 314 556c-85.3-10-175-43-175-190.6 0-42.1 15-76.5 39.6-103.5-4-9.8-17.2-49 3.7-102 0 0 32.3-10.4 105.6 39.5 31.3-8.6 63.7-13 96.1-13a367 367 0 0 1 96.2 13c73.3-49.8 105.5-39.5 105.5-39.5 21 53.1 7.8 92.3 3.8 102 24.7 27 39.5 61.4 39.5 103.5 0 148.1-89.8 180.7-175.3 190.2 13.8 12 26 35.5 26 71.4 0 51.6-.4 93.1-.4 105.8 0 10.3 6.9 22.3 26.4 18.5A385.5 385.5 0 0 0 768 385.5C768 172.6 596 0 384 0Zm0 0"/>
+          </svg>
+        </a>
+        <a aria-label="Linked-In" rel="noreferrer" href="https://nl.linkedin.com/in/niels-pruis-21082003/en" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 768 768">
+            <path d="M655.04 64H112.96a46.4 46.4 0 0 0-47.04 45.76v548.48A46.4 46.4 0 0 0 112.96 704h542.08a46.4 46.4 0 0 0 47.04-45.76V109.76A46.4 46.4 0 0 0 655.04 64ZM258.88 599.68h-96v-288h96Zm-48-328.32a49.92 49.92 0 1 1 0-99.84 50.25 50.25 0 1 1 0 99.84Zm394.24 328.32h-96V445.12c0-38.72-13.76-64-48.64-64A52.8 52.8 0 0 0 411.2 416a63.97 63.97 0 0 0-3.2 23.36v160h-96v-288h96V352a96 96 0 0 1 86.72-48c64 0 110.4 41.28 110.4 129.92Zm0 0"/>
+          </svg>
+        </a>
+      </div>
+    </main>
+    <footer>
+      &copy; Niels Pruis
+    </footer>
+  </div>
