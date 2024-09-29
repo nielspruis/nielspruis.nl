@@ -1,0 +1,30 @@
+main {
+    border: 1px solid grey;
+    border-radius: 4px;
+    width: 18rem;
+    height: 20rem;
+    margin: 5rem auto;
+    padding: 1rem;
+    display: grid;
+    grid-template: auto auto / auto auto;
+    background-color: rgba(228, 228, 228, 0.5);
+}
+
+img {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 4px;
+}
+
+h1 {
+    font-size: 22pt;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+address {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    align-self: auto;
+    margin-top: 2.5rem;
+}
