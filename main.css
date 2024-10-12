@@ -1,3 +1,10 @@
+:root {
+    --brand-color: #4F8DFF;
+    --dark-brand-color: blue;
+    --background-color: #fff;
+    --text-color: #000;
+}
+
 @font-face {
     font-family: Yantramanav;
     src: url(fonts/Yantramanav-Medium.ttf);
@@ -13,18 +20,68 @@ h1 {
     font-size: 24pt;
 }
 
-span, p {
+h2 {
+    font-family: Yantramanav;
+    font-size: 20pt;
+}
+
+span,
+a,
+p {
     font-family: DMSans;
 }
 
-img {
-    width: 250px;
-    height: 250px;
+a,
+a:visited {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+a:hover {
+    color: var(--dark-brand-color);
+}
+
+body {
+    padding: 1rem;
+    background-color: var(--background-color);
+}
+
+nav {
+    padding-bottom: 1rem;
+    background-color: var(--brand-color);
+    color: var(--text-color);
     border-radius: 4px;
+    padding: 1rem;
+    margin-bottom: 2rem;
 }
 
 header {
     display: flex;
-    width: 450px;
-    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 1rem;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 4px;
+}
+
+main {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 4px;
+    border: 1px solid var(--dark-brand-color);
+    padding: 1rem;
+    background-color: var(--brand-color);
 }
