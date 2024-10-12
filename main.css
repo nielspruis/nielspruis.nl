@@ -1,67 +1,30 @@
 @font-face {
-    font-family: NeueHaasMedium;
-    src: url(fonts/NeueHaasDisplayMedium.ttf);
+    font-family: Yantramanav;
+    src: url(fonts/Yantramanav-Medium.ttf);
 }
 
 @font-face {
-    font-family: NeueHaasLight;
-    src: url(fonts/NeueHaasDisplayLight.ttf);
-}
-
-nav {
-    padding: 1rem;
-    display: grid;
-    grid: 2rem / 1fr 1fr 1fr;
-    gap: 1rem;
-}
-
-main {
-    display: grid;
-    gap: 1rem;
-    grid: 5rem 10rem 10rem / 1fr 1fr 1fr;
-    padding: 0 1rem 1rem 1rem;
+    font-family: DMSans;
+    src: url(fonts/DMSans-Regular.ttf);
 }
 
 h1 {
-    font-size: 28pt;
-    line-height: 31pt;
-    font-family: NeueHaasMedium;
-    grid-column: 1 / 3;
+    font-family: Yantramanav;
+    font-size: 24pt;
 }
 
-a:visited, a {
-    text-decoration: none;
+span, p {
+    font-family: DMSans;
 }
 
-a {
-    color: inherit;
-    transition: opacity 300ms;
+img {
+    width: 250px;
+    height: 250px;
+    border-radius: 4px;
 }
 
-a:hover {
-    opacity: 50%;
-}
-
-address, a {
-    font-family: NeueHaasMedium;
-    font-size: 12pt;
-    line-height: 10pt;
-}
-
-address {
-    grid-row: 3 / 4;
-    grid-column: 1 / 3;
-}
-
-@media screen and (min-width: 768px) {
-
-    body {
-        margin: 0 auto;
-    }
-
-    main {
-        /* grid: 15rem 15rem 15rem / 10rem 10rem 10rem; */
-        max-width: 900px;
-    }
-
+header {
+    display: flex;
+    width: 450px;
+    flex-wrap: wrap;
 }
