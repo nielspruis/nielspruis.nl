@@ -1,0 +1,138 @@
+:root {
+    --brand-color: #ecf0fc;
+    --dark-brand-color: #1351d8;
+    --button-hover-color: #4862dd;
+    --border-card-color: rgba(19, 81, 216, .2);
+    --dark-border-card-color: rgba(63, 63, 63, .2);
+    --drop-shadow-color: rgba(0, 0, 0, .1);
+    --background-color: #fff;
+    --dark-background-color: #121212;
+    --text-color: #000;
+    --dark-text-color: #fff;
+    --dark-card-color: #282828;
+}
+
+@font-face {
+    font-family: Yantramanav;
+    src: url(fonts/Yantramanav-Medium.ttf);
+}
+
+@font-face {
+    font-family: DMSans;
+    src: url(fonts/DMSans-Regular.ttf);
+}
+
+h1 {
+    font-family: Yantramanav;
+    font-size: 24pt;
+}
+
+h2 {
+    font-family: Yantramanav;
+    font-size: 20pt;
+}
+
+span,
+a,
+p {
+    font-family: DMSans;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color 250ms;
+}
+
+a:hover,
+a:visited:hover {
+    color: var(--dark-brand-color);
+}
+
+body {
+    padding: 1rem;
+    background-color: var(--background-color);
+}
+
+nav {
+    padding-bottom: 1rem;
+    background-color: var(--brand-color);
+    color: var(--text-color);
+    border-radius: 4px;
+    padding: 1rem;
+    margin: 0 auto 2.5rem auto;
+    border: 1px solid var(--border-card-color);
+    max-width: 480px;
+    display: flex;
+    gap: 1.5rem;
+    filter: drop-shadow(0 0 0.75rem var(--drop-shadow-color));
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 1rem;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 4px;
+    filter: drop-shadow(0 0 0.75rem var(--drop-shadow-color));
+}
+
+main {
+    margin: 2.5rem auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 4px;
+    border: 1px solid var(--border-card-color);
+    padding: 1rem;
+    background-color: var(--brand-color);
+    filter: drop-shadow(0 0 0.75rem var(--drop-shadow-color));
+    max-width: 480px;
+}
+
+@media (prefers-color-scheme: dark) {
+
+    h1,
+    h2,
+    p,
+    span,
+    a,
+    a:visited {
+        color: var(--brand-color);
+    }
+
+    body {
+        background-color: var(--dark-background-color);
+    }
+
+    nav,
+    main {
+        background-color: var(--dark-card-color);
+        border: 1px solid var(--dark-border-card-color);
+    }
+
+}
+
+@media only screen and (min-width: 480px) {
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+}
