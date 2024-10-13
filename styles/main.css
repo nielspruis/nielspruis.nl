@@ -14,12 +14,12 @@
 
 @font-face {
     font-family: Yantramanav;
-    src: url(fonts/Yantramanav-Medium.ttf);
+    src: url(../fonts/Yantramanav-Medium.ttf);
 }
 
 @font-face {
     font-family: DMSans;
-    src: url(fonts/DMSans-Regular.ttf);
+    src: url(../fonts/DMSans-Regular.ttf);
 }
 
 h1 {
