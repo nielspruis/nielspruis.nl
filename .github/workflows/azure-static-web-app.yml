@@ -1,0 +1,25 @@
+name: Deploy to Azure Static Web App
+
+on:
+  push:
+    branches:
+      - main  # Trigger deployment on push to the 'main' branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the repository
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      # Deploy to Azure Static Web Apps
+      - name: 'Deploy to Azure Static Web App'
+        uses: azure/static-web-apps-deploy-action@v1
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
+          branch: main  # The branch to deploy from
+          app_location: '/'  # The root of your repository (adjust if your app is in a subfolder)
+          api_location: ''  # If you have an API, specify the location, otherwise leave empty
+          output_location: 'build'  # The folder that contains the built app (adjust based on your build process)
